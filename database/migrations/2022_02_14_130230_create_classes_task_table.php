@@ -18,7 +18,7 @@ class CreateClassesTaskTable extends Migration
             $table->foreignId('task_id');
             $table->foreignId('class_id');
             $table->foreignId('user_id');
-            $table->string('work_finished'); // TRUE if task done
+            $table->boolean('work_finished'); // TRUE if task done
             $table->timestamps();
         });
     }

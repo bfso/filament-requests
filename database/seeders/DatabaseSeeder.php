@@ -30,6 +30,7 @@ class DatabaseSeeder extends Seeder
             'email'=>'admin@bfo.ch',
             'name'=>'admin@bfo.ch',
             'password'=>Hash::make('admin@bfo.ch'),
+            'address'=>'Lonzastrasse 15, 3930 Visp',
         ]);
     }
 }
