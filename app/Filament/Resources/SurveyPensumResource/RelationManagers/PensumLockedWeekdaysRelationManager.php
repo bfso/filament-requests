@@ -18,7 +18,7 @@ class PensumLockedWeekdaysRelationManager extends BelongsToManyRelationManager
     {
         return $form
             ->schema([
-                Forms\Components\Select::make('weekday')->options(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'])->required(),
+                //
             ]);
     }
 
