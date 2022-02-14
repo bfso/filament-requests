@@ -13,7 +13,7 @@ class CreateClassesTaskTable extends Migration
      */
     public function up()
     {
-        Schema::create('groups_task', function (Blueprint $table) {
+        Schema::create('group_tasks', function (Blueprint $table) {
             $table->id();
             $table->foreignId('task_id');
             $table->foreignId('group_id');
@@ -30,6 +30,6 @@ class CreateClassesTaskTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('groups_task');
+        Schema::dropIfExists('group_tasks');
     }
 }
