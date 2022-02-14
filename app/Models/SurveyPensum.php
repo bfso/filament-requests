@@ -18,8 +18,8 @@ class SurveyPensum extends Model
         'headteacher_talk'
     ];
 
-    public function pensum_blocked_weekdays() {
-        return $this->hasMany(LockedWeekdays::class, 'survey-pensum_id');
+    public function pensumBlockedWeekdays() {
+        return $this->hasMany(LockedWeekdays::class, 'survey_pensum_id');
     }
 
     public function person() {

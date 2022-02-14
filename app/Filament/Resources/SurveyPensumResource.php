@@ -24,7 +24,7 @@ class SurveyPensumResource extends Resource
                 Forms\Components\BelongsToSelect::make('person')->relationship('person', 'name')->required(),
                 Forms\Components\TextInput::make('classHouresOld')->postfix('hours')->default(6)->required(),
                 Forms\Components\TextInput::make('classHouresNew')->postfix('hours')->default(6)->required(),
-                Forms\Components\HasManyRepeater::make('weekday')->relationship('pensum_blocked_weekdays', 'weekday'),
+                Forms\Components\HasManyRepeater::make('weekday')->relationship('pensumBlockedWeekdays', 'weekday'),
                 Forms\Components\Textarea::make('cause')->required(),
             ]);
     }
