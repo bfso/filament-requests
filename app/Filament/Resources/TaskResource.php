@@ -44,6 +44,9 @@ class TaskResource extends Resource
             ])
             ->filters([
                 //
+            ])
+            ->pushActions([
+                // If push is pressed
             ]);
     }
 
