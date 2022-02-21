@@ -10,12 +10,12 @@ class LockedWeekdays extends Model
     use HasFactory;
 
     protected $fillable = [
-        'survey-pensum_id',
+        'survey_pensum_id',
         'weekday',
         'cause'
     ];
 
-    public function survey_pensum() {
-        return $this->belongsTo(SurveyPensum::class, 'survey-pensum_id');
+    public function surveyPensum() {
+        return $this->belongsTo(SurveyPensum::class, 'survey_pensum_id');
     }
 }

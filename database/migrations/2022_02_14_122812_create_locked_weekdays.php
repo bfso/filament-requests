@@ -15,7 +15,7 @@ class CreateLockedWeekdays extends Migration
     {
         Schema::create('locked_weekdays', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('survey-pensum_id');
+            $table->foreignId('survey_pensum_id');
             $table->string('weekday');
             $table->string('cause');
             $table->timestamps();

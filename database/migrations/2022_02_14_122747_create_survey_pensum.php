@@ -21,6 +21,7 @@ class CreateSurveyPensum extends Migration
             $table->string('note');
             $table->boolean('headteacher_visit');
             $table->boolean('headteacher_talk');
+            $table->string('year');
             $table->timestamps();
         });
 

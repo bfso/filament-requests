@@ -10,7 +10,7 @@ use Filament\Tables;
 
 class PensumLockedWeekdaysRelationManager extends BelongsToManyRelationManager
 {
-    protected static string $relationship = 'locked_weekdays';
+    protected static string $relationship = 'pensumBlockedWeekdays';
 
     protected static ?string $recordTitleAttribute = 'weekday';
 
@@ -18,7 +18,7 @@ class PensumLockedWeekdaysRelationManager extends BelongsToManyRelationManager
     {
         return $form
             ->schema([
-                Forms\Components\Select::make('weekday')->options(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'])->required(),
+                //
             ]);
     }
 
