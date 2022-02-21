@@ -31,7 +31,7 @@ class SurveyPensumResource extends Resource
 
         return $form
             ->schema([
-                Forms\Components\BelongsToSelect::make('person_id')->relationship('person', 'name')->label('Teacher')->required(),
+                Forms\Components\Hidden::make('person_id')->default(0),
                 Forms\Components\TextInput::make('classhoures_old')->postfix('hours')->default(6)->required(),
                 Forms\Components\TextInput::make('classhoures_new')->postfix('hours')->default(6)->required(),
                 Forms\Components\HasManyRepeater::make('weekday')->relationship('pensumBlockedWeekdays', 'weekday')
@@ -39,10 +39,10 @@ class SurveyPensumResource extends Resource
                                 Forms\Components\Select::make('weekday')->options(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'])->required(),
                                 Forms\Components\TextInput::make('cause')->required()
                             ]),
+                Forms\Components\Textarea::make('note')->required(),
                 Forms\Components\Checkbox::make('headteacher_visit')->default(false),
                 Forms\Components\Checkbox::make('headteacher_talk')->default(false),
-                Forms\Components\Hidden::make('year')->default($surveyYear),
-                Forms\Components\Textarea::make('note')->required()
+                Forms\Components\Hidden::make('year')->default($surveyYear)
                 
             ]);
     }
