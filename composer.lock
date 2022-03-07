@@ -1162,16 +1162,16 @@
         },
         {
             "name": "filament/filament",
-            "version": "v2.10.22",
+            "version": "v2.10.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-filament/admin.git",
-                "reference": "34e9e05bdc01731d8d599e9736588231d7cb8792"
+                "reference": "7d4bc8b6db323886d1c3646786c6b50b48a06f61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-filament/admin/zipball/34e9e05bdc01731d8d599e9736588231d7cb8792",
-                "reference": "34e9e05bdc01731d8d599e9736588231d7cb8792",
+                "url": "https://api.github.com/repos/laravel-filament/admin/zipball/7d4bc8b6db323886d1c3646786c6b50b48a06f61",
+                "reference": "7d4bc8b6db323886d1c3646786c6b50b48a06f61",
                 "shasum": ""
             },
             "require": {
@@ -1218,20 +1218,20 @@
                 "issues": "https://github.com/laravel-filament/filament/issues",
                 "source": "https://github.com/laravel-filament/filament"
             },
-            "time": "2022-03-04T21:10:23+00:00"
+            "time": "2022-03-07T09:53:36+00:00"
         },
         {
             "name": "filament/forms",
-            "version": "v2.10.22",
+            "version": "v2.10.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-filament/forms.git",
-                "reference": "55fa6dd410de62c7de2c0369cbb35d7a0d10431d"
+                "reference": "6736a86cdd37a8bd907e01d9360b5fd1964c9614"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-filament/forms/zipball/55fa6dd410de62c7de2c0369cbb35d7a0d10431d",
-                "reference": "55fa6dd410de62c7de2c0369cbb35d7a0d10431d",
+                "url": "https://api.github.com/repos/laravel-filament/forms/zipball/6736a86cdd37a8bd907e01d9360b5fd1964c9614",
+                "reference": "6736a86cdd37a8bd907e01d9360b5fd1964c9614",
                 "shasum": ""
             },
             "require": {
@@ -1274,20 +1274,20 @@
                 "issues": "https://github.com/laravel-filament/filament/issues",
                 "source": "https://github.com/laravel-filament/filament"
             },
-            "time": "2022-03-04T21:10:13+00:00"
+            "time": "2022-03-07T09:53:36+00:00"
         },
         {
             "name": "filament/tables",
-            "version": "v2.10.22",
+            "version": "v2.10.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-filament/tables.git",
-                "reference": "70add991226f9f4e9feb34c6e57fc54f3a61fabc"
+                "reference": "873edadcc1bd6e48722fc666d769cc708067d88e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-filament/tables/zipball/70add991226f9f4e9feb34c6e57fc54f3a61fabc",
-                "reference": "70add991226f9f4e9feb34c6e57fc54f3a61fabc",
+                "url": "https://api.github.com/repos/laravel-filament/tables/zipball/873edadcc1bd6e48722fc666d769cc708067d88e",
+                "reference": "873edadcc1bd6e48722fc666d769cc708067d88e",
                 "shasum": ""
             },
             "require": {
@@ -1327,7 +1327,7 @@
                 "issues": "https://github.com/laravel-filament/filament/issues",
                 "source": "https://github.com/laravel-filament/filament"
             },
-            "time": "2022-03-04T21:10:19+00:00"
+            "time": "2022-03-07T09:53:32+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -7475,16 +7475,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "9.2.14",
+            "version": "9.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "9f4d60b6afe5546421462b76cd4e633ebc364ab4"
+                "reference": "2e9da11878c4202f97915c1cb4bb1ca318a63f5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/9f4d60b6afe5546421462b76cd4e633ebc364ab4",
-                "reference": "9f4d60b6afe5546421462b76cd4e633ebc364ab4",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/2e9da11878c4202f97915c1cb4bb1ca318a63f5f",
+                "reference": "2e9da11878c4202f97915c1cb4bb1ca318a63f5f",
                 "shasum": ""
             },
             "require": {
@@ -7540,7 +7540,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.14"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/9.2.15"
             },
             "funding": [
                 {
@@ -7548,7 +7548,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-28T12:38:02+00:00"
+            "time": "2022-03-07T09:28:20+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -8918,5 +8918,5 @@
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.2.0"
 }

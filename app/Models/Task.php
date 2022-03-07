@@ -11,6 +11,7 @@ class Task extends Model
 
     protected $fillable = [
         'description',
-        'task_time',
+        'time',
+        'group_id',
     ];
 }

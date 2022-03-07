@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\TaskResource\Pages;
 use App\Filament\Resources\TaskResource\RelationManagers;
+use App\Models\Group;
 use App\Models\Task;
 use Filament\Forms;
 use Filament\Resources\Form;
@@ -25,9 +26,13 @@ class TaskResource extends Resource
                     ->required()
                     ->maxLength(255)
                     ->label("Beschreibung"),
-                Forms\Components\TextInput::make('task_time')
+                Forms\Components\TextInput::make('time')
                     ->required()
                     ->label("Auftrags-Zeit"),
+                Forms\Components\Select::make('group_id')
+                    ->label('Klasse')
+                    ->options(Group::all()->pluck('name', 'id')),
+
             ]);
     }
 
@@ -36,7 +41,8 @@ class TaskResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('description'),
-                Tables\Columns\TextColumn::make('task_time'),
+                Tables\Columns\TextColumn::make('time'),
+                Tables\Columns\TextColumn::make('group_id'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime(),
                 Tables\Columns\TextColumn::make('updated_at')
