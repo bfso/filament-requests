@@ -12,6 +12,9 @@ use Filament\Resources\Table;
 use Filament\Tables;
 use App\Models\User;
 
+use Filament\Tables\Filters\Filter;
+use Illuminate\Database\Eloquent\Builder;
+
 class SurveyPensumResource extends Resource
 {
     protected static ?string $model = SurveyPensum::class;
@@ -56,14 +59,16 @@ class SurveyPensumResource extends Resource
                 Tables\Columns\TextColumn::make('year')->label('Year'),
             ])
             ->filters([
-                //
+                Filter::make('isOwnEntry')
+                    ->query(fn (Builder $query): Builder => $query->where('person_id', auth()->user()->id))
+                    ->label("Own entries")
             ]);
     }
 
     public static function getRelations(): array
     {
         return [
-            RelationManagers\PensumLockedWeekdaysRelationManager::class
+            //RelationManagers\PensumLockedWeekdaysRelationManager::class
         ];
     }
 
